@@ -6,7 +6,7 @@ import ProductSlider from './ProductSlider';
 
 function QualityProductSlider() {
     const [triggerAnimation,setTriggerAnimation] = useState(false);
-    const prodcutsRef = useRef(null);
+    const prodcutSliderRef = useRef(null);
 
     useEffect(()=>{
         document.addEventListener("scroll",isElementInViewport);
@@ -17,7 +17,7 @@ function QualityProductSlider() {
     },[]);
   
     const isElementInViewport = () => {
-        var rect = prodcutsRef.current.getBoundingClientRect();
+        var rect = prodcutSliderRef.current.getBoundingClientRect();
         if(rect.top < window.innerHeight/1.3){
             return setTriggerAnimation(true);
         }
@@ -25,7 +25,7 @@ function QualityProductSlider() {
 
     return (
         <>
-            <section className="quality-product-slider" ref={prodcutsRef}>
+            <section className="quality-product-slider" ref={prodcutSliderRef}>
                     <h2>
                         <TextAnimation text={"Quality Products"} initialDelay={.10} isStart={triggerAnimation}/>
                     </h2>

@@ -30,20 +30,23 @@ export const heroSliderItems = [
 
 export const clientData = [
     { 
+        image: "./images/product-slide1.png",
         title: "Client 1", 
-        location: "Dubai, United Arab Emirates", 
-        image: "./images/product-slide1.png" 
+        location: "Dubai, United Arab Emirates"
     },
     { 
+        image: "./images/product-slide2.png",
         title: "Client 2", 
-        location: "Maranello, Italy", 
-        image: "./images/product-slide2.png"
+        location: "Maranello, Italy"
     },
-    {   title: "Client 3", 
-        location: "Paris", 
-        image: "./images/product-slide3.png" 
+    {   
+        image: "./images/product-slide3.png" ,
+        title: "Client 3", 
+        location: "Paris"
     },
-    {   title: "Client 4", 
-        location: "City of London", 
-        image: "./images/product-slide1.png" }
+    {   
+        image: "./images/product-slide1.png",
+        title: "Client 4", 
+        location: "City of London"
+    }
 ];

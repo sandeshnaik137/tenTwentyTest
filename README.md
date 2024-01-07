@@ -2,9 +2,28 @@
 
 The App is not initialised using create-react-app used vite instead
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to Run the Project
 
-Currently, two official plugins are available:
+1. Clone this repository to your local machine:
+   ```
+   git clone https://github.com/sandeshnaik137/tenTwentyTest.git
+   ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Navigate to the project directory:
+   ```
+   cd tenTwentyTest
+   ```
+
+3. Install the required dependencies:
+   ```
+   npm install
+   ```
+
+4. Run the development server:
+   ```
+   npm run dev
+   ```
+
+The website will be available at `http://localhost:5173` in your web browser.
+
+Online link :- `https://ten-twenty-test.vercel.app/`
