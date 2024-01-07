@@ -1,27 +1,27 @@
 export const heroSliderItems = [
     {  
-        image: "../../public/images/hero-banner1.png", 
-        thumbnailImg: "../../public/images/thumbnail-img1.png" ,
+        image: "./images/hero-banner1.png", 
+        thumbnailImg: "./images/thumbnail-img1.png" ,
         tagLine: "Welcome To TenTwenty Farms",
         title: "From Our Farms To Your Hands"
         
     },
     {   
-        image: "../../public/images/hero-banner2.png", 
-        thumbnailImg: "../../public/images/thumbnail-img2.png",
+        image: "./images/hero-banner2.png", 
+        thumbnailImg: "./images/thumbnail-img2.png",
         tagLine: "Welcome To TenTwenty Farms 2",
         title: "From Our Farms To Your Hands 2"
     },
     {  
-        image: "../../public/images/hero-banner3.png", 
-        thumbnailImg: "../../public/images/thumbnail-img3.png" ,
+        image: "./images/hero-banner3.png", 
+        thumbnailImg: "./images/thumbnail-img3.png" ,
         tagLine: "Welcome To TenTwenty Farms 3",
         title: "From Our Farms To Your Hands 3"
         
     },
     {   
-        image: "../../public/images/hero-banner4.png", 
-        thumbnailImg: "../../public/images/thumbnail-img4.png",
+        image: "./images/hero-banner4.png", 
+        thumbnailImg: "./images/thumbnail-img4.png",
         tagLine: "Welcome To TenTwenty Farms 4",
         title: "From Our Farms To Your Hands 4"
     }
