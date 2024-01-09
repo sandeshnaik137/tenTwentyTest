@@ -17,6 +17,10 @@
         animation-duration: 3s;
         animation-iteration-count: 1;
         transition: all .10s ease;
+
+        @media screen and (max-width: 768px) {
+            max-height: 812px;
+        }
     
         &.addImgAnimation{
             animation-name: animateimg2;
@@ -116,11 +120,11 @@
             bottom: 80px;
 
             @media screen and (max-width: 1366px) {
-                bottom: 44px;
+                bottom: 60px;
             }
 
             @media screen and (max-width: 1024px) {
-                bottom: 20px;
+                bottom: 40px;
             }
 
             @media screen and (max-width: 768px) {
@@ -128,7 +132,7 @@
             }
 
             @media screen and (max-width: 540px) {
-                bottom: 80px;
+                bottom: 120px;
             }
 
             .next_thumb{
