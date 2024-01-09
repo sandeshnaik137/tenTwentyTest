@@ -154,8 +154,8 @@ function ProductSlider({clients}) {
                             />
                             <button className={`drag-btn ${isDragging?"hide":""}`}>Drag</button>
 
-                            <h3>{client.title}</h3>
-                            <p>{client.location}</p>
+                            <h3 className='fade-up'>{client.title} </h3>
+                            <p className='fade-up'>{client.location} </p>
                         </div>
                     ))}
                      <div className="slide empty">

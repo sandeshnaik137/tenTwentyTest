@@ -27,10 +27,10 @@ function QualityProductSlider() {
         <>
             <section className="quality-product-slider" ref={prodcutSliderRef}>
                     <h2>
-                        <TextAnimation text={"Quality Products"} initialDelay={.10} isStart={triggerAnimation}/>
+                        <TextAnimation text={"Quality Products"} initialDelay={.2} isStart={triggerAnimation} wordSplit/>
                     </h2>
                     <p>
-                        <TextAnimation text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} initialDelay={.5} isStart={triggerAnimation}/>
+                        <TextAnimation text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} initialDelay={.3} isStart={triggerAnimation} textSplit/>
                     </p>
                 <ProductSlider clients={clientData} />
             </section>

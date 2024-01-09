@@ -131,4 +131,25 @@
         opacity: 0;
         transition:all .5s;
     }
+    .fade-up{
+        opacity: 0;
+        animation-name: animateText;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        display: block;
+        margin-right: .2em;
+    }
+    
+    @keyframes animateText {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+    
+    }
 }

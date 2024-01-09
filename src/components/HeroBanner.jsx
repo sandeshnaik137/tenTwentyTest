@@ -5,12 +5,13 @@ import "./HeroBanner.scss"
 function HeroBanner({ items }) {
     const [currentIndx, setCurrentIndx] = useState(0);
     const [distance, setDistance] = useState(0);
+    const [isStartTextAnimation,setIsStartTextAnimation] = useState("");
     const length = items.length;
   
     useEffect(() => {
       const interval =
         distance < 410
-          ? setInterval(() => (setDistance(distance + 1.5)), 25)
+          ? setInterval(() => {(setDistance(distance + 1.5)),setIsStartTextAnimation("addImgAnimation")}, 25)
           : handleNext();
       return () => clearInterval(interval);
       
@@ -19,22 +20,24 @@ function HeroBanner({ items }) {
     const handleNext = () => {
       if (currentIndx + 1 < length) {
         setCurrentIndx((prev) => prev + 1);
+        setIsStartTextAnimation("")
         setDistance(0);
       } else {
         setCurrentIndx(0);
+        setIsStartTextAnimation("")
         setDistance(0);
       }
     };
-
     return (
         <section
-        className="hearo-banner-section"
-        style={{ backgroundImage: `url(${items[currentIndx].image})` }}
+        className={`hero-banner-section ${isStartTextAnimation}`}
+        style={{ backgroundImage: `url(${items[currentIndx].imagePrev})` }}
       >
+        <img src={items[currentIndx].image} className={`hero-img ${isStartTextAnimation}`}/>
         <div className="container">
           <div className="hero-banner-text" key={items[currentIndx].title}>
-                <h1 className="tagline"><TextAnimation text={items[currentIndx].tagLine} initialDelay={.20}/></h1>
-                <h2 className="title"><TextAnimation text={items[currentIndx].title} initialDelay={.10}/></h2>
+                <h1 className="tagline"><TextAnimation text={items[currentIndx].tagLine} initialDelay={.20} wordSplit/></h1>
+                <h2 className="title"><TextAnimation text={items[currentIndx].title} initialDelay={.10} wordSplit/></h2>
           </div>
           <div className="next-container">
             <div className="next_thumb" onClick={handleNext}>

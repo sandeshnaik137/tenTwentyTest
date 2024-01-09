@@ -1,7 +1,7 @@
 .text-fade-up{
     opacity: 0;
     animation-name: animateText;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     display: inline-block;
@@ -11,7 +11,7 @@
 @keyframes animateText {
     0% {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(50px);
       }
       100% {
         opacity: 1;
